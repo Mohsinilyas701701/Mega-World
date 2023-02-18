@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar pe-5 navbar-expand-lg bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -26,7 +27,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
+                <ul class="navbar-nav ms--md-5 mb-md-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
@@ -41,7 +42,7 @@
                         <a class="nav-link" href="#">Promotions</a>
                     </li>    
                 </ul>
-                <div class="nav-right ms-auto d-flex align-items-center">
+                <div class="nav-right ms-auto ps-4 ps-md-0 my-4 my-md-0 d-flex align-items-center">
                     <div class="search mx-2">
                     <input type="text" placeholder="Search">
                     <i class="fa-solid fa-magnifying-glass fs-5 text-white"></i>
@@ -50,18 +51,100 @@
                         <i class="fa-regular fa-message text-white fs-2"></i>
                         <span class="position-absolute top-10 start-9 translate-middle rounded-5 text-white">99<span class="visually-hidden">unread messages</span></span>
                     </div>
-
                     <button type="button" class="btn nav_button text-white mx-3"> Create Account</button>
                     <button type="button" class="btn login_button mx-2"> Login</button>
                 </div>
-            </div>
-
-           
+            </div> 
         </div>
     </nav>
-
     <!-- Header-Image -->
     <img src="images/header-bg.png" class="header-image" alt="">
+
+    <!-- Footer -->
+    <footer class="footer bg-light py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-evenly">
+                <div class="col-md-3">
+                    <ul class="footer_nav d-flex flex-column align-items-md-start align-items-center gap-3">
+                        <li><a href="#" class="fw-bold">About</a></li>
+                        <li><a href="#">회사 소개</a></li>
+                        <li><a href="#">계열사</a></li>
+                        <li><a href="#">책임감 있는 도박</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="footer_nav d-flex flex-column  align-items-md-start align-items-center  gap-3">
+                        <li><a href="#" class="fw-bold">Help</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">파트너 문의</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="footer_nav d-flex flex-column  align-items-md-start align-items-center  gap-3">
+                        <li><a href="#" class="fw-bold">Games</a></li>
+                        <li><a href="#">라이브 카지노</a></li>
+                        <li><a href="#">슬롯 게임</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer_nav d-flex flex-column  align-items-md-start align-items-center gap-3 pb-5">
+                        <p class="fw-bold">Contact</p>
+                        <div class="contact-wrapper d-flex gap-3">
+                            <img src="images/footer-contact.png" alt="">
+                            <div class="addres-wrap">
+                                <p>카카오톡</p>
+                                <p>WIDE9999</p>
+                            </div>
+                        </div>
+                        <div class="contact-wrapper d-flex gap-3">
+                            <img src="images/footer-contact2.png" alt="">
+                            <div class="addres-wrap">
+                                <p>텔레그램</p>
+                                <p>WIDE9999</p>
+                            </div>
+                        </div>
+                        <div class="contact-wrapper d-flex gap-3">
+                            <img src="images/footer-contact3.png" alt="">
+                            <div class="addres-wrap">
+                                <p>텔레그램</p>
+                                <p>WIDE9999</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/footer_line.svg" alt="">
+            </div>
+
+            <div class="d-flex flex-column align-items-center gap-3 my-md-5">
+                <img src="images/brand-footer.svg" alt="">
+                <p class="fs-4 fw-bold">ABOUT MEGA WOLRD</p>
+                <p class="fs-6">메가 월드 카지노에 궁금한 점이 있으시면 빠른 답변을 위해 카카오톡 또는 텔레그램으로 연락 주십시요.</p>
+                <div class="d-flex align-items-center gap-3">
+                    <img src="images/18.png" alt="">
+                 <p class="fs-4 fw-light">Gambling can be addictive. Play responsibly. 18 and over only.</p>
+                </div>
+                <img src="images/footer_line.svg" class="footerline_img" alt="">
+            </div>
+
+            <div class="footer_menu">
+                <ul class="d-flex flex-column flex-md-row align-items-center justify-content-evenly p-0">
+                    <li><a href="">Terms And Conditions</a></li>
+                    <li><a href="">Cookie Policy</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Disclaimer</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">FAQs</a></li>
+                </ul>
+                <p class="fs-4 pt-4 text-center">&copy 2022 mega world ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
+
+
+
