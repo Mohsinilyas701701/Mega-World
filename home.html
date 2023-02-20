@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Links -->
     <script src="https://kit.fontawesome.com/934270ec05.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Mega World</title>
 </head>
 
@@ -19,7 +21,7 @@
     <nav class="navbar pe-5 navbar-expand-lg bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="images/brand-logo.svg" alt="">
+                <img src="images/brand-logo.svg" alt="" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -32,7 +34,7 @@
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item d-flex">
-                    <img src="images/Ellipse-nav.png" class="ellipse_img align-self-center " alt=""> 
+                        <img src="images/Ellipse-nav.png" class="ellipse_img align-self-center" alt="" />
                         <a class="nav-link ms-1" href="#">Live Casino</a>
                     </li>
                     <li class="nav-item">
@@ -40,26 +42,110 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Promotions</a>
-                    </li>    
+                    </li>
                 </ul>
                 <div class="nav-right ms-auto ps-4 ps-md-0 my-4 my-md-0 d-flex align-items-center">
                     <div class="search mx-2">
-                    <input type="text" placeholder="Search">
-                    <i class="fa-solid fa-magnifying-glass fs-5 text-white"></i>
+                        <input type="text" placeholder="Search" />
+                        <i class="fa-solid fa-magnifying-glass fs-5 text-white"></i>
                     </div>
                     <div class="message-icon mx-2 position-relative">
                         <i class="fa-regular fa-message text-white fs-2"></i>
-                        <span class="position-absolute top-10 start-9 translate-middle rounded-5 text-white">99<span class="visually-hidden">unread messages</span></span>
+                        <span class="position-absolute top-10 start-9 translate-middle rounded-5 text-white">99<span
+                                class="visually-hidden">unread messages</span></span>
                     </div>
-                    <button type="button" class="btn nav_button text-white mx-3"> Create Account</button>
-                    <button type="button" class="btn login_button mx-2"> Login</button>
+                    <button type="button" class="btn nav_button text-white mx-3">Create Account</button>
+                    <button type="button" class="btn login_button mx-2">Login</button>
                 </div>
-            </div> 
+            </div>
         </div>
     </nav>
     <!-- Header-Image -->
-    <img src="images/header-bg.png" class="header-image" alt="">
+    <img src="images/header-bg.png" class="header-image" alt="header-image" />
 
+    <!-- Live Winners Section -->
+
+    <section class="live_winner">
+        <div class="container-fluid">
+            <div class="row py-5">
+                <img src="images/green_line.svg" class="green_line" alt="green_line" />
+                <h1 class="text-white">LIVE <span>WINNERS</span></h1>
+                <img src="images/green_line.svg" class="green_line2" alt="green_line" />
+
+                <!-- My code
+                <div class="slider d-flex gap-4 align-items-center">
+                    <div class="winner_card2 d-flex gap-4">
+                        <div class="overlay-img">
+                            <img src="images/live_winner2.png" class="live_winner2" alt="">
+                            <div class="overlay">
+                                <img src="images/tom-game.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-wrapper2">
+                            <img src="images/star-image.png" alt="">
+                            <img src="images/live_winner1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="winner_card2 d-flex gap-4">
+                        
+                    </div>
+                    <div class="winner_card2 d-flex gap-4">
+                        <img src="images/frotu.png" alt="frotu">
+                        <img src="images/fruto.png" class="mx-4" alt="frotu">
+                    </div>
+                    <div class="winner_card1 d-flex gap-4">
+                        <div class="overlay-img">
+                            <img src="images/live_winner2.png" class="live_winner2" alt="">
+                            <div class="overlay">
+                                <img src="images/tom-game.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-wrapper">
+                            <img src="images/star-image.png" alt="">
+                            <img src="images/live_winner1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="winner_card2 d-flex gap-4">
+                        <img src="images/teen-patti1.png" alt="teen-patti1">
+                        <img src="images/teen-patti-2.png" class="mx-4" alt="teen-patti2">
+                    </div>
+                    <div class="winner_card2 d-flex gap-4">
+                        <img src="images/frotu.png" alt="frotu">
+                        <img src="images/fruto.png" class="mx-4" alt="frotu">
+                    </div>
+                </div> -->
+
+                <!-- Google  -->
+
+                <div class="slider slider-nav my-4">
+                    <div class="d-flex gap-3">
+                        <img src="images/teen-patti1.png" alt="teen-patti1">
+                        <img src="images/teen-patti-2.png" class="mx-3 align-self-center" alt="teen-patti2">
+                    </div>
+                    <div class="d-flex gap-3">
+                        <img src="images/frotu.png" alt="frotu">
+                        <img src="images/fruto.png" class="mx-3 align-self-center" alt="frotu">
+                    </div>
+                    <div class="d-flex gap-3">
+                        <img src="images/teen-patti1.png" alt="teen-patti1">
+                        <img src="images/teen-patti-2.png" class="mx-3 align-self-center" alt="teen-patti2">
+                    </div>
+                    <div class="d-flex gap-3">
+                        <img src="images/frotu.png" alt="frotu">
+                        <img src="images/fruto.png" class="mx-3 align-self-center" alt="frotu">
+                    </div>
+                    <div class="d-flex gap-3">
+                        <img src="images/teen-patti1.png" alt="teen-patti1">
+                        <img src="images/teen-patti-2.png" class="mx-3 align-self-center" alt="teen-patti2">
+                    </div>
+                    <div class="d-flex gap-3">
+                        <img src="images/frotu.png" alt="frotu">
+                        <img src="images/fruto.png" class="mx-3 align-self-center" alt="frotu">
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
     <footer class="footer bg-light py-5">
         <div class="container">
@@ -73,7 +159,7 @@
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <ul class="footer_nav d-flex flex-column  align-items-md-start align-items-center  gap-3">
+                    <ul class="footer_nav d-flex flex-column align-items-md-start align-items-center gap-3">
                         <li><a href="#" class="fw-bold">Help</a></li>
                         <li><a href="#">자주 묻는 질문</a></li>
                         <li><a href="#">공지사항</a></li>
@@ -81,31 +167,31 @@
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <ul class="footer_nav d-flex flex-column  align-items-md-start align-items-center  gap-3">
+                    <ul class="footer_nav d-flex flex-column align-items-md-start align-items-center gap-3">
                         <li><a href="#" class="fw-bold">Games</a></li>
                         <li><a href="#">라이브 카지노</a></li>
                         <li><a href="#">슬롯 게임</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <div class="footer_nav d-flex flex-column  align-items-md-start align-items-center gap-3 pb-5">
+                    <div class="footer_nav d-flex flex-column align-items-md-start align-items-center gap-3 pb-5">
                         <p class="fw-bold">Contact</p>
                         <div class="contact-wrapper d-flex gap-3">
-                            <img src="images/footer-contact.png" alt="">
+                            <img src="images/footer-contact.png" alt="" />
                             <div class="addres-wrap">
                                 <p>카카오톡</p>
                                 <p>WIDE9999</p>
                             </div>
                         </div>
                         <div class="contact-wrapper d-flex gap-3">
-                            <img src="images/footer-contact2.png" alt="">
+                            <img src="images/footer-contact2.png" alt="" />
                             <div class="addres-wrap">
                                 <p>텔레그램</p>
                                 <p>WIDE9999</p>
                             </div>
                         </div>
                         <div class="contact-wrapper d-flex gap-3">
-                            <img src="images/footer-contact3.png" alt="">
+                            <img src="images/footer-contact3.png" alt="" />
                             <div class="addres-wrap">
                                 <p>텔레그램</p>
                                 <p>WIDE9999</p>
@@ -113,18 +199,23 @@
                         </div>
                     </div>
                 </div>
-                <img src="images/footer_line.svg" alt="">
+                <img src="images/footer_line.svg" alt="" />
             </div>
 
             <div class="d-flex flex-column align-items-center gap-3 my-md-5">
-                <img src="images/brand-footer.svg" alt="">
+                <img src="images/brand-footer.svg" alt="" />
                 <p class="fs-4 fw-bold">ABOUT MEGA WOLRD</p>
-                <p class="fs-6">메가 월드 카지노에 궁금한 점이 있으시면 빠른 답변을 위해 카카오톡 또는 텔레그램으로 연락 주십시요.</p>
+                <p class="fs-6">
+                    메가 월드 카지노에 궁금한 점이 있으시면 빠른 답변을 위해 카카오톡 또는 텔레그램으로 연락
+                    주십시요.
+                </p>
                 <div class="d-flex align-items-center gap-3">
-                    <img src="images/18.png" alt="">
-                 <p class="fs-4 fw-light">Gambling can be addictive. Play responsibly. 18 and over only.</p>
+                    <img src="images/18.png" alt="" />
+                    <p class="fs-4 fw-light">
+                        Gambling can be addictive. Play responsibly. 18 and over only.
+                    </p>
                 </div>
-                <img src="images/footer_line.svg" class="footerline_img" alt="">
+                <img src="images/footer_line.svg" class="footerline_img" alt="" />
             </div>
 
             <div class="footer_menu">
@@ -141,10 +232,23 @@
         </div>
     </footer>
 
+    <!-- Script Tags -->
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+ $('.slider-nav').slick({
+   slidesToShow: 4,
+   slidesToScroll: 1,
+   arrows:false,
+   infinite: true,
+//   autoplay: true,
+  autoplaySpeed: 2000,
+ });
+
+    </script>
 </body>
 
 </html>
-
-
-

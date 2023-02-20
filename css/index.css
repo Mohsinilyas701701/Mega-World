@@ -1,49 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
 
-*{
+* {
     padding: 0;
-   
+    margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     background: #181E23;
     font-family: 'Ubuntu', sans-serif;
+    --span: #CEFF44;
 }
 
-p{
+p {
     margin-bottom: 0;
 }
 
-.header-image{
+span {
+    color: var(--span);
+}
+
+.header-image {
     width: 100%;
     height: calc(90vh - 6px);
 }
 
-.nav-item{
+.nav-item {
     margin: 0 20px;
 }
 
-.nav-link{
+.nav-link {
     color: #fff;
     font-weight: bold;
     font-size: 1.6rem;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #fff;
 }
 
-.ellipse_img{
+.ellipse_img {
     width: 5px;
     height: 5px;
 }
 
-.search{
+.search {
     background: #29343D;
     padding: 11px 13px;
     width: 141px;
@@ -51,19 +56,19 @@ p{
     border-radius: 3px;
 }
 
-.search input{
+.search input {
     width: 90px;
     background-color: #29343D;
     border: 0;
     color: #fff;
 }
 
-.search input:focus{
+.search input:focus {
     outline: 0;
     border: none;
 }
 
-.message-icon{
+.message-icon {
     background-color: #29343D;
     width: 40px;
     height: 40px;
@@ -71,12 +76,12 @@ p{
     border-radius: 3px;
 }
 
-.message-icon span{
+.message-icon span {
     background: #BD0507;
     padding: 0 3px;
 }
 
-.nav_button{
+.nav_button {
     width: 153px;
     height: 40px;
     background: linear-gradient(266.09deg, #C40406 49.27%, #E40C0E 49.28%);
@@ -86,7 +91,7 @@ p{
     font-weight: bold;
 }
 
-.login_button{
+.login_button {
     border: 1px solid #fff;
     border-radius: 3px;
     width: 107px;
@@ -96,57 +101,93 @@ p{
     font-weight: bold;
 }
 
-.login_button:hover{
+.login_button:hover {
     background: #fff;
     color: #000;
 }
 
+/* Live Winner */
+
+.live_winner h1 {
+    padding-left: 7.3rem;
+}
+
+.green_line {
+    width: 30px;
+    height: 5px;
+}
+
+.green_line2 {
+    width: 30px;
+    height: 5px;
+    margin-left: 155px;
+}
+
+/* Slick Slider */
+
+.slick-slide.slick-active{
+    margin: 0 15px;
+    background-color: #101416;
+}
+
+h3 {
+    background: #fff;
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+
 /* Footer */
-.footer_nav li{
+.footer_nav li {
     list-style-type: none;
 
 }
-.footer_nav li a{
+
+.footer_nav li a {
     font-size: 1.4rem;
     color: #000;
     text-decoration: none;
 }
 
-.footer_nav p{
+.footer_nav p {
     font-size: 1.6rem;
 }
 
-.contact-wrapper img{
+.contact-wrapper img {
     max-width: 100%;
     align-self: center;
 }
 
 .addres-wrap p:nth-child(1) {
-   color: #969FAA;
-   font-size: 1.4rem;
+    color: #969FAA;
+    font-size: 1.4rem;
 }
 
 .addres-wrap p:nth-child(2) {
-   color: #01060C;
-   font-weight: 700;
-   font-size: 1.4rem;
+    color: #01060C;
+    font-weight: 700;
+    font-size: 1.4rem;
 }
 
-.footer-content p:nth-child(1){
+.footer-content p:nth-child(1) {
     font-size: 1.6rem;
     font-weight: 700;
 }
 
-.footerline_img{
+.footerline_img {
     width: 100%;
     margin-top: 20px;
 }
 
-.footer_menu li{
+.footer_menu li {
     list-style-type: none;
 }
 
-.footer_menu ul li a{
+.footer_menu ul li a {
     font-size: 1.2rem;
     color: #000;
     text-decoration: none;
