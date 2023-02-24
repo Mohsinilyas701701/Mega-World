@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Mega World</title>
@@ -23,7 +24,10 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar pe-5 navbar-expand-lg bg-dark">
-        <div class="container-fluid">
+        <div class="container-fluid p-0">
+            <div class="sidebar-icon me-3">
+                <i class='bx bx-menu-alt-left'></i>
+            </div>
             <a class="navbar-brand" href="#">
                 <img src="images/brand-logo.svg" alt="" />
             </a>
@@ -65,19 +69,37 @@
         </div>
     </nav>
     <!-- Header-Image -->
-    <img src="images/header-bg.png" class="header-image" alt="header-image" />
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/header-bg.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/header-bg.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/header-bg.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
 
     <!-- Live Winners Section -->
-
     <section class="live_winner">
         <div class="container-fluid">
-            <div class="row py-5">
+            <div class="row pt-5">
                 <img src="images/green_line.svg" class="green_line" alt="green_line" />
                 <h1 class="text-white">LIVE <span>WINNERS</span></h1>
                 <img src="images/green_line.svg" class="green_line2" alt="green_line" />
-
                 <!-- Live Winner Section -->
-                <div class="slider slider-nav my-4">
+                <div class="slider slider-nav p-0 my-4">
                     <div class="d-flex gap-3">
                         <img src="images/teen-patti1.png" alt="teen-patti1">
                         <img src="images/teen-patti-2.png" class="mx-3 align-self-center" alt="teen-patti2">
@@ -104,27 +126,37 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Second Sections _ Cards -->
+    <section class="live_casionslots">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 py-5">
-                    <div class="live_casino">
+                    <div class="live_casino_cards">
                         <h2>Live Casino</h2>
                         <img src="images/roller.png" class="roller" alt="">
                     </div>
                 </div>
                 <div class="col-md-6 py-5">
-                    <div class="live_casino">
+                    <div class="live_casino_cards">
                         <h2>Slots</h2>
                         <img src="images/roller-bar.png" class="roller" alt="">
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Provider Lobbies Section -->
-            <div class="row py-5">
+    <!-- Provider Lobbies Section -->
+    <section class="provider-lobbies">
+        <div class="container-fluid">
+            <div class="row">
                 <img src="images/green_line.svg" class="green_line" alt="green_line" />
                 <h1 class="text-white">PROVIDER LOBBIES</h1>
                 <img src="images/green_line.svg" class="green_line3" alt="green_line" />
-                <div class="provider slider-nav my-5">
+                <div class="provider-lobby slider-nav my-5">
                     <div>
                         <img src="images/provider1.png" alt="" class="provider-img">
                     </div>
@@ -142,13 +174,18 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Live Casino Section -->
+    <!-- Live Casino Section -->
+
+    <section class="live_casino">
+        <div class="container-fluid">
             <div class="row py-5">
                 <img src="images/green_line.svg" class="green_line" alt="green_line" />
                 <h1 class="text-white">LIVE CASINO</h1>
                 <img src="images/green_line.svg" class="green_line4" alt="green_line" />
-                <div class="provider slider-nav my-5">
+                <div class="live_casino_slider slider-nav my-5">
                     <div>
                         <img src="images/casino1.png" alt="" class="provider-img">
                     </div>
@@ -166,98 +203,107 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Slots  -->
-            <div class="row py-5" id="slots">
-                <img src="images/green_line.svg" class="green_line6" alt="green_line" />
-                <h1 class="text-white">Slots</h1>
-                <img src="images/green_line.svg" class="green_line5" alt="green_line" />
-                <div class="d-flex justify-content-evenly px-5">
-                    <div class="col-md-2 my-5">
-                        <div class="slot-wrap">
-                            <img src="images/slot1.png" alt="">
-                            <p>Mine Mine Quest</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2 my-5">
-                        <div class="slot-wrap">
-                            <img src="images/slot2.png" alt="">
-                            <p>Beastie Bux</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2 my-5">
-                        <div class="slot-wrap">
-                            <img src="images/slot3.png" alt="">
-                            <p>Crystal fruits</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2 my-5">
-                        <div class="slot-wrap">
-                            <img src="images/slot4.png" alt="">
-                            <p>christmas fruits</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2 my-5">
-                        <div class="slot-wrap">
-                            <img src="images/slot5.png" alt="">
-                            <p>christmas fruits</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2 my-5">
-                        <div class="slot-wrap">
-                            <img src="images/slot6.png" alt="">
-                            <p>Geisha's Fan</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-evenly px-5">
-                    <div class="col-md-2 my-1">
-                        <div class="slot-wrap">
-                            <img src="images/slot7.png" alt="">
-                            <p>Spin Ball</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2 my-1">
-                        <div class="slot-wrap">
-                            <img src="images/slot8.png" alt="">
-                            <p>Incas Treasure</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2 my-1">
-                        <div class="slot-wrap">
-                            <img src="images/slot9.png" alt="">
-                            <p>Cash Elevator</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2 my-1">
-                        <div class="slot-wrap">
-                            <img src="images/slot10.png" alt="">
-                            <p>Showlis Tiger</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2 my-1">
-                        <div class="slot-wrap">
-                            <img src="images/slot11.png" alt="">
-                            <p>Fruits Go Pop</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2 my-1">
-                        <div class="slot-wrap">
-                            <img src="images/slot12.png" alt="">
-                            <p>Jokers Reelz</p>
-                        </div>
-                    </div>
+    <!-- Slots  -->
+    <div class="row pb-5" id="slots">
+        <img src="images/green_line.svg" class="green_line6" alt="green_line" />
+        <h1 class="text-white">Slots</h1>
+        <img src="images/green_line.svg" class="green_line5" alt="green_line" />
+        <div class="d-flex justify-content-evenly px-5">
+            <div class="col-md-2 my-5">
+                <div class="slot-wrap">
+                    <img src="images/slot1.png" alt="">
+                    <p>Mine Mine Quest</p>
                 </div>
             </div>
+            <div class="col-md-2 my-5">
+                <div class="slot-wrap">
+                    <img src="images/slot2.png" alt="">
+                    <p>Beastie Bux</p>
+                </div>
+            </div>
+            <div class="col-md-2 my-5">
+                <div class="slot-wrap">
+                    <img src="images/slot3.png" alt="">
+                    <p>Crystal fruits</p>
+                </div>
+            </div>
+            <div class="col-md-2 my-5">
+                <div class="slot-wrap">
+                    <img src="images/slot4.png" alt="">
+                    <p>christmas fruits</p>
+                </div>
+            </div>
+            <div class="col-md-2 my-5">
+                <div class="slot-wrap">
+                    <img src="images/slot5.png" alt="">
+                    <p>christmas fruits</p>
+                </div>
+            </div>
+            <div class="col-md-2 my-5">
+                <div class="slot-wrap">
+                    <img src="images/slot6.png" alt="">
+                    <p>Geisha's Fan</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-evenly px-5">
+            <div class="col-md-2 my-1">
+                <div class="slot-wrap">
+                    <img src="images/slot7.png" alt="">
+                    <p>Spin Ball</p>
+                </div>
+            </div>
+            <div class="col-md-2 my-1">
+                <div class="slot-wrap">
+                    <img src="images/slot8.png" alt="">
+                    <p>Incas Treasure</p>
+                </div>
+            </div>
+            <div class="col-md-2 my-1">
+                <div class="slot-wrap">
+                    <img src="images/slot9.png" alt="">
+                    <p>Cash Elevator</p>
+                </div>
+            </div>
+            <div class="col-md-2 my-1">
+                <div class="slot-wrap">
+                    <img src="images/slot10.png" alt="">
+                    <p>Showlis Tiger</p>
+                </div>
+            </div>
+            <div class="col-md-2 my-1">
+                <div class="slot-wrap">
+                    <img src="images/slot11.png" alt="">
+                    <p>Fruits Go Pop</p>
+                </div>
+            </div>
+            <div class="col-md-2 my-1">
+                <div class="slot-wrap">
+                    <img src="images/slot12.png" alt="">
+                    <p>Jokers Reelz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn nav_button text-white load_more">
+        <div class="d-flex justify-content-center">
+            <p>Load More</p>
+            <i class='bx bxs-down-arrow-alt text-white fs-2'></i>
+        </div>
+    </button>
 
-            <button type="button" class="btn nav_button text-white load_more">Load More</button>
+    <!-- Recommended -->
 
-            <!-- Provider Lobbies Section -->
+    <section class="recommended">
+        <div class="container-fluid">
             <div class="row py-5">
                 <img src="images/green_line.svg" class="green_line" alt="green_line" />
                 <h1 class="text-white">RECOMMENDED</h1>
                 <img src="images/green_line.svg" class="green_line7" alt="green_line" />
-                <div class="recommend slider-nav my-5">
+                <div class="recommend-slider slider-nav my-5">
                     <div>
                         <img src="images/reco1.png" alt="" class="provider-img">
                     </div>
@@ -276,8 +322,161 @@
                 </div>
             </div>
         </div>
+    </section>
+   
+    <!-- Tables  -->
+
+    <section class="table-body px-5 my-5">
+        <div class="container-fluid">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="table-data px-4 py-5">
+                        <p>Notice</p>
+                        <table class="table-data1">
+                            <tr>
+                                <th>#</th>
+                                <th>NOTICE</th>
+                                <th>DATE</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    💘💔◈{Several times a day}◈▶Information on changing deposit
+                                    accounts💔💘
+                                </td>
+                                <td>2022-11-21</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    💘💔◈{Several times a day}◈▶Information on changing deposit
+                                    accounts💔💘
+                                </td>
+                                <td>2022-11-21</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><div>
+                                    ▣Check betting history by game company▣
+                                </div></td>
+                                <td>2022-11-21</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="table-data px-4 py-5">
+                        <p>Real-time Deposit Status</p>
+                        <table class="table-data2">
+                            <tr>
+                                <th>PLAYER</th>
+                                <th>WINNING AMOUNT</th>
+                                <th>DATE</th>
+                            </tr>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>500,000</td>
+                                <td>11-27 11:53</td>
+                            </tr>
+                            <tr>
+                                <td>SHikai99</td>
+                                <td>500,000</td>
+                                <td>11-27 11:53</td>
+                            </tr>
+                            <tr>
+                                <td>Alex_00</td>
+                                <td>80,000</td>
+                                <td>11-27 11:53</td>
+                            </tr>
+                            <tr>
+                                <td>Jeff22</td>
+                                <td>KRW 400,000</td>
+                                <td>11-27 11:53</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="table-data px-4 py-5">
+                        <p>Withdrawal top of the week</p>
+                        <table class="table-data2">
+                            <tr>
+                                <th>PLAYER</th>
+                                <th>WINNING AMOUNT</th>
+                                <th>DATE</th>
+                            </tr>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>500,000</td>
+                                <td>11-27 11:53</td>
+                            </tr>
+                            <tr>
+                                <td>SHikai99</td>
+                                <td>500,000</td>
+                                <td>11-27 11:53</td>
+                            </tr>
+                            <tr>
+                                <td>Alex_00</td>
+                                <td>80,000</td>
+                                <td>11-27 11:53</td>
+                            </tr>
+                            <tr>
+                                <td>Jeff22</td>
+                                <td>KRW 400,000</td>
+                                <td>11-27 11:53</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- CTA Banner -->
+    <section class="livecasino-banner my-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="live-banner"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Providers -->
+    <section class="top-gaming-providers my-3">
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="text-white text-center">TOP PROVIDER</h1>
+                <img src="images/green_line.svg" class="green_line8" alt="green_line" />
+                <div class="top-provider mt-5 slider-nav">
+                    <div class="top-providers">
+                        <img src="images/game1.png" class="top-provider-img" alt="">
+                    </div>
+                    <div class="top-providers">
+                        <img src="images/game2.png" class="top-provider-img" alt="">
+                    </div>
+                    <div class="top-providers">
+                        <img src="images/game3.png" class="top-provider-img" alt="">
+                    </div>
+                    <div class="top-providers">
+                        <img src="images/game4.png" class="top-provider-img" alt="">
+                    </div>
+                    <div class="top-providers">
+                        <img src="images/game5.png" class="top-provider-img" alt="">
+                    </div>
+                    <div class="top-providers">
+                        <img src="images/game6.png" class="top-provider-img" alt="">
+                    </div>
+                    <div class="top-providers">
+                        <img src="images/game2.png" class="top-provider-img" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <img src="images/Vector7.png" class="curve-img" alt="">
+
+
     <!-- Footer -->
     <footer class="footer bg-light py-5">
         <div class="container">
@@ -370,27 +569,43 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
     <script>
         $('.slider-nav').slick({
             slidesToShow: 4,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
             infinite: true,
             //   autoplay: true,
             autoplaySpeed: 2000,
         });
 
-        $('.provider').slick({
-            slidesToShow: 5,
+        $('.provider-lobby').slick({
+            slidesToShow: 4,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
             infinite: true,
         });
 
-        $('.recommend').slick({
+        $('.live_casino_slider').slick({
             slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+            infinite: true,
+        });
+
+        $('.recommend-slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+            infinite: true,
+        });
+
+
+        $('.top-provider').slick({
+            slidesToShow: 6,
             slidesToScroll: 1,
             arrows: false,
             infinite: true,
